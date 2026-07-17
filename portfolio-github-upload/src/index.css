@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  color: #282335;
+  background: #fbf9ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #282335;
+  background: #e9e3ff;
+}
+
+.display-font {
+  font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
+}
+
+.utility-font {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
