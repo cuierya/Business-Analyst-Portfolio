@@ -1,5 +1,4 @@
 # Business-Analyst-Portfolio
-# 崔萍萍｜商业分析师个人简历
 
 # 崔萍萍
 
