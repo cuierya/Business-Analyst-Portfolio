@@ -1,6 +1,6 @@
 # Business-Analyst-Portfolio
 
-# 崔萍萍
+# Esther Cui
 
 **商业分析师｜经营分析｜数据分析**　深圳｜香港
 
@@ -104,7 +104,7 @@
 
 ## 📄简历附件
 
-[\[崔萍萍\-商业分析师\.pdf\]](https://my.feishu.cn/file/E42FbFnxooEE0dxveDVczW2Enie?from=from_copylink)
+[\[Esther Cui\-商业分析师\.pdf\]](https://my.feishu.cn/file/E42FbFnxooEE0dxveDVczW2Enie?from=from_copylink)
 
 
 
