@@ -1,13 +1,36 @@
 import { motion, useReducedMotion } from "framer-motion";
+import type { Language } from "../types";
 
-const metrics = [
-  { value: "60%", label: "调研效率提升" },
-  { value: "30%", label: "协同效率提升" },
-  { value: "10+", label: "新品推动开发" },
-];
+const content = {
+  zh: {
+    headline: ["把复杂业务", "拆成清晰、可执行的", "增长答案。"],
+    intro: ["商业分析师，专注跨境电商数据分析、市场洞察与经营策略。", "用数据定位问题，用 AI 放大分析效率，让洞察真正落到业务结果。"],
+    work: "查看代表作品",
+    contact: "联系我",
+    imageAlt: "商业分析师 Esther Cui 的职业头像",
+    metrics: [
+      { value: "60%", label: "调研效率提升" },
+      { value: "30%", label: "协同效率提升" },
+      { value: "10+", label: "新品推动开发" },
+    ],
+  },
+  en: {
+    headline: ["Turning complex business challenges", "into clear, actionable", "growth solutions."],
+    intro: ["Business analyst specializing in cross-border e-commerce analytics, market intelligence, and operational strategy.", "I use data to identify problems and AI to accelerate analysis—transforming insights into measurable business outcomes."],
+    work: "View selected work",
+    contact: "Contact me",
+    imageAlt: "Professional portrait of business analyst Esther Cui",
+    metrics: [
+      { value: "+60%", label: "Research efficiency" },
+      { value: "+30%", label: "Collaboration efficiency" },
+      { value: "10+", label: "New products advanced" },
+    ],
+  },
+};
 
-export default function Hero() {
+export default function Hero({ language }: { language: Language }) {
   const reduceMotion = useReducedMotion();
+  const copy = content[language];
   const enter = reduceMotion ? {} : { initial: { opacity: 0, y: 24 }, animate: { opacity: 1, y: 0 } };
 
   return (
@@ -24,27 +47,27 @@ export default function Hero() {
             </p>
           </div>
           <h1 className="display-font max-w-3xl text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.12] tracking-[-0.04em] text-[#282335]">
-            <span className="block">把复杂业务</span>
-            <span className="mt-2 block lg:whitespace-nowrap">
-              拆成清晰、可执行的<span className="bg-gradient-to-r from-[#7b68d5] to-[#dd756b] bg-clip-text text-transparent">增长答案。</span>
+            <span className="block">{copy.headline[0]}</span>
+            <span className={`mt-2 block ${language === "zh" ? "lg:whitespace-nowrap" : ""}`}>
+              {copy.headline[1]} <span className="bg-gradient-to-r from-[#7b68d5] to-[#dd756b] bg-clip-text text-transparent">{copy.headline[2]}</span>
             </span>
           </h1>
           <p className="mt-7 max-w-2xl text-sm leading-7 text-[#6f687a] sm:text-base sm:leading-8">
-            <span className="block">商业分析师，专注跨境电商数据分析、市场洞察与经营策略。</span>
-            <span className="block">用数据定位问题，用 AI 放大分析效率，让洞察真正落到业务结果。</span>
+            <span className="block">{copy.intro[0]}</span>
+            <span className="block">{copy.intro[1]}</span>
           </p>
           <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
             <a
               href="#projects"
               className="inline-flex items-center justify-center bg-[#282335] px-7 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#625383]"
             >
-              查看代表作品 <span className="ml-2" aria-hidden="true">↗</span>
+              {copy.work} <span className="ml-2" aria-hidden="true">↗</span>
             </a>
             <a
               href="#contact"
               className="inline-flex items-center border-b border-[#9582e8] px-1 py-2 text-sm font-semibold text-[#625383] transition hover:border-[#ee8d81] hover:text-[#dd756b]"
             >
-              联系我 <span className="ml-2" aria-hidden="true">↓</span>
+              {copy.contact} <span className="ml-2" aria-hidden="true">↓</span>
             </a>
           </div>
         </motion.div>
@@ -59,7 +82,7 @@ export default function Hero() {
           <div className="relative overflow-hidden rounded-[7rem_0_0_0] bg-white p-2 shadow-[0_24px_60px_rgba(40,35,53,0.12)]">
             <img
               src="/portrait.webp"
-              alt="商业分析师崔萍萍的职业头像"
+              alt={copy.imageAlt}
               width="900"
               height="1200"
               fetchPriority="high"
@@ -69,7 +92,7 @@ export default function Hero() {
         </motion.div>
 
         <div className="grid border-y border-[#dcd5e7] lg:col-span-2 sm:grid-cols-3 sm:divide-x sm:divide-[#dcd5e7]">
-          {metrics.map((metric) => (
+          {copy.metrics.map((metric) => (
             <div key={metric.label} className="flex items-baseline justify-between border-b border-[#dcd5e7] px-5 py-5 last:border-b-0 sm:block sm:border-b-0 sm:px-8">
               <strong className="utility-font text-2xl font-medium text-[#282335] sm:text-3xl">{metric.value}</strong>
               <p className="mt-1 text-xs tracking-wide text-[#6f687a]">{metric.label}</p>

@@ -1,20 +1,39 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { projects } from "../data/projects";
+import type { Language } from "../types";
 
-export default function Projects() {
+const content = {
+  zh: {
+    heading: "代表作品",
+    intro: "从市场研判、数据产品到经营策略，展示我如何把分析变成可验证的业务结果。",
+    view: "查看完整作品",
+    secondaryLabel: "打开跨境多维表联动作品",
+    impact: "BUSINESS IMPACT",
+  },
+  en: {
+    heading: "Selected Work",
+    intro: "From market research and data products to operational strategy, these projects show how I turn analysis into measurable business outcomes.",
+    view: "View full project",
+    secondaryLabel: "Open the cross-border data integration project",
+    impact: "BUSINESS IMPACT",
+  },
+};
+
+export default function Projects({ language }: { language: Language }) {
   const reduceMotion = useReducedMotion();
+  const copy = content[language];
 
   return (
     <section id="projects" className="bg-[#fbf9ff] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-[#9582e8]">SELECTED WORK</p>
-          <h2 className="display-font mt-4 text-4xl leading-tight sm:text-6xl">代表作品</h2>
-          <p className="mt-5 text-base leading-8 text-[#6f687a] sm:text-lg">从市场研判、数据产品到经营策略，展示我如何把分析变成可验证的业务结果。</p>
+          <h2 className="display-font mt-4 text-4xl leading-tight sm:text-6xl">{copy.heading}</h2>
+          <p className="mt-5 text-base leading-8 text-[#6f687a] sm:text-lg">{copy.intro}</p>
         </div>
 
         <div className="mt-14 border-t border-[#dcd5e7]">
-          {projects.map((project, index) => (
+          {projects[language].map((project, index) => (
             <motion.article
               key={project.title}
               initial={reduceMotion ? undefined : { opacity: 0, y: 26 }}
@@ -52,9 +71,9 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
-                      aria-label="打开跨境多维表联动作品"
+                      aria-label={copy.secondaryLabel}
                     >
-                      查看完整作品 <span className="ml-2" aria-hidden="true">↗</span>
+                      {copy.view} <span className="ml-2" aria-hidden="true">↗</span>
                     </a>
                   )}
                   <a
@@ -62,14 +81,14 @@ export default function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
-                    aria-label={`打开${project.title}${project.secondaryLink ? "的 BI 看板" : ""}`}
+                    aria-label={language === "zh" ? `打开${project.title}${project.secondaryLink ? "的 BI 看板" : ""}` : `Open ${project.title}${project.secondaryLink ? " BI dashboard" : ""}`}
                   >
-                    查看完整作品 <span className="ml-2" aria-hidden="true">↗</span>
+                    {copy.view} <span className="ml-2" aria-hidden="true">↗</span>
                   </a>
                 </div>
                 </div>
                 <aside className="border-l border-[#dcd5e7] pl-5 lg:pt-8">
-                  <p className="utility-font text-[10px] tracking-[0.18em] text-[#9582e8]">BUSINESS IMPACT</p>
+                  <p className="utility-font text-[10px] tracking-[0.18em] text-[#9582e8]">{copy.impact}</p>
                   <p className="display-font mt-3 text-xl leading-8 text-[#625383]">{project.result}</p>
                 </aside>
               </div>

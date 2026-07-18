@@ -1,9 +1,32 @@
 import { useState } from "react";
+import type { Language } from "../types";
 
 const EMAIL = "cuierya07@gmail.com";
 
-export default function Contact() {
+const content = {
+  zh: {
+    heading: "期待把下一份清晰、可执行的答案，带到你的团队。",
+    roles: "商业分析 | 经营分析 | 数据分析",
+    locations: "深圳 | 香港",
+    copy: "点击复制",
+    copied: "已复制",
+    copyLabel: `复制邮箱 ${EMAIL}`,
+    repository: "GitHub 作品仓库",
+  },
+  en: {
+    heading: "I look forward to bringing the next clear, actionable answer to your team.",
+    roles: "Business Analysis | Operations Analysis | Data Analysis",
+    locations: "Shenzhen | Hong Kong",
+    copy: "COPY",
+    copied: "COPIED",
+    copyLabel: `Copy email ${EMAIL}`,
+    repository: "GitHub Portfolio Repository",
+  },
+};
+
+export default function Contact({ language }: { language: Language }) {
   const [copied, setCopied] = useState(false);
+  const copy = content[language];
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText(EMAIL);
@@ -19,10 +42,10 @@ export default function Contact() {
           <div className="relative grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-end">
             <div>
             <p className="text-xs font-semibold tracking-[0.2em] text-[#cfc4f6]">LET'S WORK TOGETHER</p>
-            <h2 className="display-font mt-5 max-w-4xl text-4xl leading-tight sm:text-6xl">期待把下一份清晰、可执行的答案，带到你的团队。</h2>
+            <h2 className="display-font mt-5 max-w-4xl text-4xl leading-tight sm:text-6xl">{copy.heading}</h2>
             <p className="mt-7 flex flex-col gap-2 text-sm font-medium tracking-wide text-[#d9d3e0] sm:flex-row sm:gap-10 sm:text-base">
-              <span>商业分析 | 经营分析 | 数据分析</span>
-              <span>深圳 | 香港</span>
+              <span>{copy.roles}</span>
+              <span>{copy.locations}</span>
             </p>
             </div>
             <div className="flex flex-col items-start gap-5 lg:items-stretch">
@@ -30,11 +53,11 @@ export default function Contact() {
                 type="button"
                 onClick={copyEmail}
                 className="flex items-center justify-between gap-5 bg-white px-7 py-3.5 text-sm font-semibold text-[#625383] transition hover:-translate-y-0.5"
-                aria-label="复制邮箱 cuierya07@gmail.com"
+                aria-label={copy.copyLabel}
               >
                 <span>{EMAIL}</span>
                 <span className="utility-font text-[10px] tracking-wider text-[#9582e8]" aria-live="polite">
-                  {copied ? "已复制" : "点击复制"}
+                  {copied ? copy.copied : copy.copy}
                 </span>
               </button>
               <a
@@ -43,7 +66,7 @@ export default function Contact() {
                 rel="noreferrer"
                 className="border-b border-white/35 px-1 py-2 text-center text-sm font-semibold text-white transition hover:border-[#ee8d81]"
               >
-                GitHub 作品仓库 ↗
+                {copy.repository} ↗
               </a>
             </div>
           </div>
