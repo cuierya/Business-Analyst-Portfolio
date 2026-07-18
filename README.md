@@ -106,5 +106,115 @@
 
 [\[Esther Cui\-商业分析师\.pdf\]](https://my.feishu.cn/file/E42FbFnxooEE0dxveDVczW2Enie?from=from_copylink)
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# Esther Cui
+
+**Business Analysis \| Operations Analysis \| Data Analysis**　Shenzhen \| Hong Kong
+
+- Turning complex business challenges into clear, actionable growth solutions\.
+
+- Business analyst specializing in cross\-border e\-commerce analytics, market intelligence, and operational strategy\. I use data to identify problems and AI to accelerate analysis—transforming insights into measurable business outcomes\.
+
+---
+
+## 🪶 Professional Summary
+
+- I start with business objectives, build performance metrics, break down complex problems, and identify the factors that matter most\. I then translate analytical findings into practical strategies that teams can execute\.
+
+- My experience across cross\-border e\-commerce and logistics enables me to work deeply with data while understanding day\-to\-day operations\. I use Codex, vibe coding, and RPA to automate repetitive analytical workflows, leaving more time for judgment and decision\-making\.
+
+## 🚩 Business Impact
+
+|Research Efficiency|Collaboration Efficiency|New Products Advanced|
+|---|---|---|
+|**\+60%**|**\+30%**|**10\+**|
+
+## ⭕ Core Competencies
+
+|**Analytical Methods**|Business Analysis, Operations Analysis, Market Intelligence, Business Diagnostics, ROI Analysis, Attribution Analysis|
+|---|---|
+|**Data Tools**|SQL, Tableau, BI, Excel, RPA|
+|**AI Productivity**|Codex, Vibe Coding, AI Agents, ChatGPT, Gemini|
+|**Business Domains**|Cross\-border E\-commerce, Supply Chain, Logistics Operations, New Product Research, Growth Strategy|
+
+## 🏢 Professional Experience
+
+### Shenzhen Hefeng Network Technology Co\., Ltd\.
+
+**Cross\-border E\-commerce Business Analyst**　Oct 2025 — Jul 2026
+
+Built an automated analytics system connecting sales, supply chain, and logistics data\. Led operational diagnostics, new product research, and AI\-enabled process improvements to support sales growth and optimize business workflows\.
+
+### Xinqihang Supply Chain Co\., Ltd\.
+
+**Cross\-border Logistics Data Operations**　Jan 2024 — Sep 2025
+
+Developed Tableau sales dashboards and an operational analysis framework to support customer segmentation, growth strategies, logistics lead\-time forecasting, and cross\-functional data requirements\.
+
+## 🚀 Selected Projects
+
+### AI\-Powered New Product Research for Cross\-border E\-commerce
+
+Market Research \| Oct 2025 — Jul 2026
+
+Researched 30\+ products and analyzed 6,000\+ customer reviews\. Used AI to clean competitor data, tag selling points, and identify market opportunities, supporting product screening and prioritization\.
+
+**Business impact:** Improved research efficiency by 60% and advanced the development of 10\+ new products\.
+
+**Keywords:** Market Sizing \| Customer Insights \| AI\-powered Competitor Analysis
+
+[View Full Project ↗](https://my.feishu.cn/wiki/X9UywMm7EiPzd8kXoX5cDmH9nFh?from=from_copylink)
+
+### Cross\-border Data Integration and BI Dashboard
+
+Data Product \| Jan 2024 — Sep 2025
+
+Integrated sales, supply chain, and logistics data to build a drill\-down Tableau operations dashboard and automated alerting system, enabling real\-time visibility into shipment volume, profitability, and fulfillment performance\.
+
+**Business impact:** Improved team productivity by 30% and increased monthly shipment volume by 7%\.
+
+**Keywords:** Tableau \| Data Modeling \| Automated Alerts
+
+[View Data Integration Project ↗](https://my.feishu.cn/wiki/GIRQwGiIginaGCkAK3lcZA3FnZb?from=from_copylink)　[View BI Dashboard ↗](https://public.tableau.com/views/-UK_17769154366490/-1?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Cross\-border Operations Analysis and Strategy
+
+Operations Analysis \| Mar 2025 — Jul 2026
+
+Built an operational diagnostic framework covering revenue, profitability, advertising, and inventory\. Identified business risks and growth opportunities, then translated findings into actionable promotion, collaboration, and process strategies\.
+
+**Business impact:** Increased monthly shipment volume by 11% and improved gross margin by 3%\.
+
+**Keywords:** Operational Diagnostics \| Growth Strategy \| ROI Analysis
+
+[View Full Project ↗](https://my.feishu.cn/wiki/QZ9vw3eb8iAvbmk7t4AcxI6znge?from=from_copylink)
+
+---
+
+## 👉🏻 Career Interests \& Contact
+
+**Target roles:** Business Analysis \| Operations Analysis \| Data Analysis
+
+**Preferred locations:** Shenzhen \| Hong Kong
+
+**Email:** [cuierya07@gmail\.com](mailto:cuierya07@gmail.com)
+
+**Portfolio:** [business\-analyst\-portfolio\-cuieryas\-projects\.vercel\.app](https://business-analyst-portfolio-cuieryas-projects.vercel.app)
+
+**GitHub:** [github\.com/cuierya/Business\-Analyst\-Portfolio](https://github.com/cuierya/Business-Analyst-Portfolio)
+
+> I look forward to bringing the next clear, actionable answer to your team\.
+> 
+> 
+
+## 📄 Resume Attachment
+
+[Esther Cui \- Business Data Analysis CV\.pdf](https://my.feishu.cn/file/E42FbFnxooEE0dxveDVczW2Enie)
 
 
