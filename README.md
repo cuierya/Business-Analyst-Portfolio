@@ -103,9 +103,6 @@ Personal website link: https://business-analyst-portfolio-cuieryas-projects.verc
 
 
 
-## 📄简历附件
-
-[\[Esther Cui\-商业分析师\.pdf\]](https://my.feishu.cn/file/E42FbFnxooEE0dxveDVczW2Enie?from=from_copylink)
 
 <br>
 <br>
@@ -214,8 +211,5 @@ Built an operational diagnostic framework covering revenue, profitability, adver
 > 
 > 
 
-## 📄 Resume Attachment
-
-[Esther Cui \- Business Data Analysis CV\.pdf](https://my.feishu.cn/file/E42FbFnxooEE0dxveDVczW2Enie)
 
 
