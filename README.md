@@ -1,7 +1,7 @@
 # Business-Analyst-Portfolio
 
 # Esther Cui
-Personal website link: https://business-analyst-portfolio-cuieryas-projects.vercel.app
+ [Personal website link](https://www.esthercui.cn)
 
 **商业分析师｜经营分析｜数据分析**　深圳｜香港
 
@@ -93,7 +93,7 @@ Personal website link: https://business-analyst-portfolio-cuieryas-projects.verc
 
 **邮箱：**[cuierya07@gmail\.com](mailto:cuierya07@gmail.com)
 
-**个人网站：**[business\-analyst\-portfolio\-cuieryas\-projects\.vercel\.app](https://business-analyst-portfolio-cuieryas-projects.vercel.app)
+**个人网站：**[https://www.esthercui.cn](https://www.esthercui.cn)
 
 **GitHub：**[github\.com/cuierya/Business\-Analyst\-Portfolio](https://github.com/cuierya/Business-Analyst-Portfolio)
 
@@ -203,7 +203,7 @@ Built an operational diagnostic framework covering revenue, profitability, adver
 
 **Email:** [cuierya07@gmail\.com](mailto:cuierya07@gmail.com)
 
-**Portfolio:** [business\-analyst\-portfolio\-cuieryas\-projects\.vercel\.app](https://business-analyst-portfolio-cuieryas-projects.vercel.app)
+**Portfolio:** [https://www.esthercui.cn](https://www.esthercui.cn)
 
 **GitHub:** [github\.com/cuierya/Business\-Analyst\-Portfolio](https://github.com/cuierya/Business-Analyst-Portfolio)
 
