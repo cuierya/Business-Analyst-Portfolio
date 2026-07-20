@@ -34,9 +34,7 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#e9e3ff]/70 bg-[#fbf9ff]/90 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center px-5 sm:px-8">
         <a href="#home" className="flex items-center gap-3" aria-label={isChinese ? "返回首页" : "Back to home"}>
-          <span className="utility-font grid size-9 place-items-center border-t-2 border-[#ee8d81] bg-[#282335] text-sm font-semibold text-white">
-            C
-          </span>
+          <img src="/favicon.svg" alt="" width="40" height="40" className="size-10 shrink-0" />
           <span className="font-semibold tracking-wide">Esther Cui</span>
         </a>
 

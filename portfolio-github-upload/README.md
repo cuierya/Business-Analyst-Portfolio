@@ -1,6 +1,8 @@
-# 崔萍萍｜商业分析师作品集
+# Esther Cui｜商业分析师作品集
 
 面向商业分析、经营分析和数据分析岗位的个人作品集网站。
+
+正式网站：[https://www.esthercui.cn](https://www.esthercui.cn)
 
 ## 技术栈
 
@@ -34,4 +36,6 @@ npm run build
 
 ## 上传 GitHub
 
-本项目已经初始化 Git，并已排除 `node_modules`、`dist` 等不需要上传的文件。使用 GitHub Desktop 时，选择本项目文件夹后发布即可。
+此副本只保留网站运行和构建所需文件，不包含 `node_modules`、`dist`、Git 历史及原始素材。
+
+如果现有 Vercel 项目的 Root Directory 是 `portfolio-github-upload`，请把本文件夹内的全部内容上传到 GitHub 仓库中现有的 `portfolio-github-upload` 文件夹，不要在仓库根目录新建 `portfolio-upload` 文件夹。

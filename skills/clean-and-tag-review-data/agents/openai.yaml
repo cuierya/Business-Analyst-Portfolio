@@ -1,4 +1,0 @@
-interface:
-  display_name: "评论数据清洗与语义打标"
-  short_description: "清洗评论表格数据、合并同义标签、补全未覆盖原因并完成全量语义复核"
-  default_prompt: "Use $clean-and-tag-review-data to clean my review spreadsheet, consolidate semantic labels, and produce a fully audited tagged workbook."

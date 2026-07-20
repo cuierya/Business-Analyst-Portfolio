@@ -11,6 +11,11 @@ const content = {
     copy: "点击复制",
     copied: "已复制",
     copyLabel: `复制邮箱 ${EMAIL}`,
+    wechat: "添加微信",
+    wechatLabel: "打开微信二维码大图",
+    resume: "查看简历",
+    resumeLabel: "打开中文在线简历",
+    resumeLink: "https://my.feishu.cn/wiki/YrGewU8PQifYSIk5kAMchmaEn8f?from=from_copylink",
     repository: "GitHub 作品仓库",
   },
   en: {
@@ -20,6 +25,11 @@ const content = {
     copy: "COPY",
     copied: "COPIED",
     copyLabel: `Copy email ${EMAIL}`,
+    wechat: "Add me on WeChat",
+    wechatLabel: "Open the WeChat QR code",
+    resume: "View résumé",
+    resumeLabel: "Open the English résumé",
+    resumeLink: "https://my.feishu.cn/docx/VT3IdoLYIodttbxn18Xcsiq0nxl",
     repository: "GitHub Portfolio Repository",
   },
 };
@@ -49,6 +59,42 @@ export default function Contact({ language }: { language: Language }) {
             </p>
             </div>
             <div className="flex flex-col items-start gap-5 lg:items-stretch">
+              <div className="mx-auto flex w-fit gap-6">
+                  <a
+                  href="/wechat-qr.jpg"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={copy.wechatLabel}
+                  className="group w-[5.125rem] shrink-0 bg-white p-2 text-center text-[#625383] transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ee8d81]"
+                  >
+                    <span className="relative mx-auto block aspect-square w-full overflow-hidden bg-white">
+                      <img
+                        src="/wechat-qr.jpg"
+                        alt={copy.wechat}
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute left-[-24%] top-[-52%] w-[148%] max-w-none"
+                      />
+                    </span>
+                    <span className="mt-2 block text-[10px] font-semibold leading-tight">{copy.wechat}</span>
+                  </a>
+                  <a
+                  href={copy.resumeLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={copy.resumeLabel}
+                  className="group w-[5.125rem] shrink-0 bg-white p-2 text-center text-[#625383] transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ee8d81]"
+                  >
+                    <img
+                      src="/resume-qr.png"
+                      alt={copy.resume}
+                      loading="lazy"
+                      decoding="async"
+                      className="mx-auto aspect-square w-full bg-white object-contain"
+                    />
+                    <span className="mt-2 block text-[10px] font-semibold leading-tight">{copy.resume}</span>
+                  </a>
+              </div>
               <button
                 type="button"
                 onClick={copyEmail}

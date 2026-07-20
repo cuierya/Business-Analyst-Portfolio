@@ -76,7 +76,7 @@ export default function Hero({ language }: { language: Language }) {
           initial={reduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
           animate={reduceMotion ? undefined : { opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.12, ease: "easeOut" }}
-          className="relative z-10 mx-auto w-full max-w-md"
+          className="relative z-10 mx-auto w-full max-w-[17rem] sm:max-w-sm lg:max-w-md"
         >
           <div className="absolute -right-5 -top-5 h-full w-full border border-[#cfc4f6]" />
           <div className="relative overflow-hidden rounded-[7rem_0_0_0] bg-white p-2 shadow-[0_24px_60px_rgba(40,35,53,0.12)]">

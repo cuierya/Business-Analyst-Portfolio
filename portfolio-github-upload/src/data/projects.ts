@@ -10,6 +10,7 @@ export type Project = {
   imageAlt: string;
   link: string;
   secondaryLink?: string;
+  analysisLink?: string;
   tags: string[];
 };
 
@@ -18,6 +19,7 @@ const sharedLinks = {
   dashboard: "https://public.tableau.com/views/-UK_17769154366490/-1?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
   integration: "https://my.feishu.cn/wiki/GIRQwGiIginaGCkAK3lcZA3FnZb?from=from_copylink",
   operations: "https://my.feishu.cn/wiki/QZ9vw3eb8iAvbmk7t4AcxI6znge?from=from_copylink",
+  analysis: "https://analysis.esthercui.cn/",
 };
 
 export const projects: Record<Language, Project[]> = {
@@ -38,7 +40,7 @@ export const projects: Record<Language, Project[]> = {
       category: "数据产品",
       period: "2024.01 - 2025.09",
       description: "整合销售、供应链与物流数据，搭建可下钻的 Tableau 经营看板与自动预警体系，让业务团队实时掌握货量、利润和履约表现。",
-      result: "业务人效提升 30%，月度货量提升 7%",
+      result: "业务人效提升 30%，毛利率提升 3%",
       image: "/projects/bi-analysis.png",
       imageAlt: "跨境业务经营分析数据看板",
       link: sharedLinks.dashboard,
@@ -46,15 +48,16 @@ export const projects: Record<Language, Project[]> = {
       tags: ["Tableau", "数据建模", "自动预警"],
     },
     {
-      title: "跨境经营分析与策略输出",
+      title: "跨境经营分析、评论分析与策略输出",
       category: "经营分析",
       period: "2025.03 - 2026.07",
       description: "围绕收入、利润、广告和库存建立经营诊断框架，定位风险与增长机会，并将分析结论转化为可执行的促销、协同和流程策略。",
-      result: "月货量提升 11%，毛利率提升 3%",
+      result: "分析 6000+ 用户评论，销量增长 5%",
       image: "/projects/operations-report.png",
       imageAlt: "英国跨境电商经营分析月报页面",
       link: sharedLinks.operations,
-      tags: ["经营诊断", "增长策略", "ROI 测算"],
+      analysisLink: sharedLinks.analysis,
+      tags: ["经营诊断", "增长策略", "ROI 测算", "评论分析"],
     },
   ],
   en: [
@@ -74,7 +77,7 @@ export const projects: Record<Language, Project[]> = {
       category: "DATA PRODUCT",
       period: "Jan 2024 - Sep 2025",
       description: "Integrated sales, supply chain, and logistics data to build a drill-down Tableau operations dashboard and automated alerting system, enabling real-time visibility into shipment volume, profitability, and fulfillment performance.",
-      result: "Team productivity +30%; monthly shipment volume +7%",
+      result: "Team productivity +30%; gross margin +3%",
       image: "/projects/bi-analysis.png",
       imageAlt: "Cross-border operations analytics dashboard",
       link: sharedLinks.dashboard,
@@ -82,15 +85,16 @@ export const projects: Record<Language, Project[]> = {
       tags: ["Tableau", "Data Modeling", "Automated Alerts"],
     },
     {
-      title: "Cross-border Operations Analysis and Strategy",
+      title: "Cross-border Operations, Review Analysis and Strategy",
       category: "OPERATIONS ANALYSIS",
       period: "Mar 2025 - Jul 2026",
       description: "Built an operational diagnostic framework covering revenue, profitability, advertising, and inventory. Identified business risks and growth opportunities, then translated findings into actionable promotion, collaboration, and process strategies.",
-      result: "Monthly shipment volume +11%; gross margin +3%",
+      result: "Analyzed 6,000+ customer reviews; sales +5%",
       image: "/projects/operations-report.png",
       imageAlt: "Cross-border e-commerce operations analysis report",
       link: sharedLinks.operations,
-      tags: ["Operational Diagnostics", "Growth Strategy", "ROI Analysis"],
+      analysisLink: sharedLinks.analysis,
+      tags: ["Operational Diagnostics", "Growth Strategy", "ROI Analysis", "Review Analysis"],
     },
   ],
 };

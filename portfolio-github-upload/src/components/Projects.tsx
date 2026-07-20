@@ -7,14 +7,22 @@ const content = {
     heading: "代表作品",
     intro: "从市场研判、数据产品到经营策略，展示我如何把分析变成可验证的业务结果。",
     view: "查看完整作品",
+    integration: "查看跨境多维表作品",
+    dashboard: "查看 BI 看板",
+    operationsReport: "查看经营分析报告",
     secondaryLabel: "打开跨境多维表联动作品",
+    analysis: "查看评论分析HTML报告",
     impact: "BUSINESS IMPACT",
   },
   en: {
     heading: "Selected Work",
     intro: "From market research and data products to operational strategy, these projects show how I turn analysis into measurable business outcomes.",
     view: "View full project",
+    integration: "View cross-border multidimensional table project",
+    dashboard: "View BI dashboard",
+    operationsReport: "View operations analysis report",
     secondaryLabel: "Open the cross-border data integration project",
+    analysis: "View review analysis HTML report",
     impact: "BUSINESS IMPACT",
   },
 };
@@ -42,7 +50,13 @@ export default function Projects({ language }: { language: Language }) {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group grid gap-7 border-b border-[#dcd5e7] py-9 md:grid-cols-[14rem_1fr] md:items-start lg:gap-12"
             >
-              <div className="grid h-40 items-center overflow-hidden border border-[#e1dae9] bg-white p-2 transition-colors group-hover:border-[#9582e8]">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={language === "zh" ? `查看${project.title}` : `View ${project.title}`}
+                className="grid h-40 items-center overflow-hidden border border-[#e1dae9] bg-white p-2 transition-colors group-hover:border-[#9582e8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#9582e8]"
+              >
                 <img
                   src={project.image}
                   alt={project.imageAlt}
@@ -50,7 +64,7 @@ export default function Projects({ language }: { language: Language }) {
                   decoding="async"
                   className="h-full w-full object-contain transition duration-500 group-hover:scale-[1.025]"
                 />
-              </div>
+              </a>
               <div className="grid gap-6 lg:grid-cols-[1fr_15rem] lg:gap-12">
                 <div>
                 <div className="flex items-center justify-between gap-4 text-xs font-semibold tracking-[0.12em] text-[#9582e8]">
@@ -73,7 +87,7 @@ export default function Projects({ language }: { language: Language }) {
                       className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
                       aria-label={copy.secondaryLabel}
                     >
-                      {copy.view} <span className="ml-2" aria-hidden="true">↗</span>
+                      {copy.integration} <span className="ml-2" aria-hidden="true">↗</span>
                     </a>
                   )}
                   <a
@@ -83,8 +97,18 @@ export default function Projects({ language }: { language: Language }) {
                     className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
                     aria-label={language === "zh" ? `打开${project.title}${project.secondaryLink ? "的 BI 看板" : ""}` : `Open ${project.title}${project.secondaryLink ? " BI dashboard" : ""}`}
                   >
-                    {copy.view} <span className="ml-2" aria-hidden="true">↗</span>
+                    {project.secondaryLink ? copy.dashboard : project.analysisLink ? copy.operationsReport : copy.view} <span className="ml-2" aria-hidden="true">↗</span>
                   </a>
+                  {project.analysisLink && (
+                    <a
+                      href={project.analysisLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
+                    >
+                      {copy.analysis} <span className="ml-2" aria-hidden="true">↗</span>
+                    </a>
+                  )}
                 </div>
                 </div>
                 <aside className="border-l border-[#dcd5e7] pl-5 lg:pt-8">

@@ -1,4 +1,0 @@
-interface:
-  display_name: "分析型 HTML 看板生成"
-  short_description: "将分析结果构建为可交互、自包含并通过移动端验收的HTML看板"
-  default_prompt: "使用 $build-analytical-html-dashboard 将这份分析数据生成专业、可交互且自包含的HTML看板。"
