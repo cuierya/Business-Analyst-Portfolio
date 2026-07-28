@@ -11,6 +11,7 @@ export type Project = {
   link: string;
   secondaryLink?: string;
   analysisLink?: string;
+  cockpitLink?: string;
   tags: string[];
 };
 
@@ -20,6 +21,7 @@ const sharedLinks = {
   integration: "https://my.feishu.cn/wiki/GIRQwGiIginaGCkAK3lcZA3FnZb?from=from_copylink",
   operations: "https://my.feishu.cn/wiki/QZ9vw3eb8iAvbmk7t4AcxI6znge?from=from_copylink",
   analysis: "https://analysis.esthercui.cn/",
+  cockpit: "https://business.esthercui.cn/",
 };
 
 export const projects: Record<Language, Project[]> = {
@@ -45,7 +47,8 @@ export const projects: Record<Language, Project[]> = {
       imageAlt: "跨境业务经营分析数据看板",
       link: sharedLinks.dashboard,
       secondaryLink: sharedLinks.integration,
-      tags: ["Tableau", "数据建模", "自动预警"],
+      cockpitLink: sharedLinks.cockpit,
+      tags: ["Tableau", "数据建模", "自动预警", "数据监控"],
     },
     {
       title: "跨境经营分析、评论分析与策略输出",
@@ -82,7 +85,8 @@ export const projects: Record<Language, Project[]> = {
       imageAlt: "Cross-border operations analytics dashboard",
       link: sharedLinks.dashboard,
       secondaryLink: sharedLinks.integration,
-      tags: ["Tableau", "Data Modeling", "Automated Alerts"],
+      cockpitLink: sharedLinks.cockpit,
+      tags: ["Tableau", "Data Modeling", "Automated Alerts", "Data Monitoring"],
     },
     {
       title: "Cross-border Operations, Review Analysis and Strategy",

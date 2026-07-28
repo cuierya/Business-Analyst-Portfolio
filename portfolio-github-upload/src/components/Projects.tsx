@@ -9,6 +9,7 @@ const content = {
     view: "查看完整作品",
     integration: "查看跨境多维表作品",
     dashboard: "查看 BI 看板",
+    cockpit: "查看经营驾驶舱HTML",
     operationsReport: "查看经营分析报告",
     secondaryLabel: "打开跨境多维表联动作品",
     analysis: "查看评论分析HTML报告",
@@ -20,6 +21,7 @@ const content = {
     view: "View full project",
     integration: "View cross-border multidimensional table project",
     dashboard: "View BI dashboard",
+    cockpit: "View operations cockpit HTML",
     operationsReport: "View operations analysis report",
     secondaryLabel: "Open the cross-border data integration project",
     analysis: "View review analysis HTML report",
@@ -107,6 +109,16 @@ export default function Projects({ language }: { language: Language }) {
                       className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
                     >
                       {copy.analysis} <span className="ml-2" aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                  {project.cockpitLink && (
+                    <a
+                      href={project.cockpitLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center text-sm font-semibold text-[#625383] transition-colors hover:text-[#dd756b]"
+                    >
+                      {copy.cockpit} <span className="ml-2" aria-hidden="true">↗</span>
                     </a>
                   )}
                 </div>
