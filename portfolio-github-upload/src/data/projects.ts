@@ -12,6 +12,7 @@ export type Project = {
   secondaryLink?: string;
   analysisLink?: string;
   cockpitLink?: string;
+  researchHtmlLink?: string;
   tags: string[];
 };
 
@@ -22,6 +23,7 @@ const sharedLinks = {
   operations: "https://my.feishu.cn/wiki/QZ9vw3eb8iAvbmk7t4AcxI6znge?from=from_copylink",
   analysis: "https://analysis.esthercui.cn/",
   cockpit: "https://business.esthercui.cn/",
+  researchHtml: "https://research.esthercui.cn/",
 };
 
 export const projects: Record<Language, Project[]> = {
@@ -35,6 +37,7 @@ export const projects: Record<Language, Project[]> = {
       image: "/projects/market-research.png",
       imageAlt: "跨境电商干发喷雾市场调研报告页面",
       link: sharedLinks.research,
+      researchHtmlLink: sharedLinks.researchHtml,
       tags: ["市场容量", "用户洞察", "AI 竞品分析"],
     },
     {
@@ -73,6 +76,7 @@ export const projects: Record<Language, Project[]> = {
       image: "/projects/market-research.png",
       imageAlt: "Cross-border e-commerce market research report",
       link: sharedLinks.research,
+      researchHtmlLink: sharedLinks.researchHtml,
       tags: ["Market Sizing", "Customer Insights", "AI Competitor Analysis"],
     },
     {
