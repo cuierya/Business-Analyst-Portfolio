@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -25,6 +26,7 @@ export default function App() {
         <Contact language={language} />
       </main>
       <Footer language={language} />
+      <Analytics />
     </div>
   );
 }
