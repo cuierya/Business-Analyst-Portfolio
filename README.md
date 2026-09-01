@@ -3,7 +3,7 @@
 # Esther Cui
  [Personal website link](https://www.esthercui.cn)
 
-**商业分析师｜经营分析｜数据分析**　深圳｜香港
+**商业策略分析｜经营分析｜数据分析**　深圳｜香港
 
 - 把复杂业务，拆成清晰、可执行的增长答案。
 
